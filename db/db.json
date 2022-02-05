@@ -1,0 +1,78 @@
+{
+  "categories": [
+    {
+      "title": "Call of Duty",
+      "created": "2021-10-29T14:03:54.054Z",
+      "lastUpdated": "2021-10-29T14:03:54.054Z",
+      "id": 1
+    },
+    {
+      "title": "League of Legends",
+      "created": "2021-10-29T14:04:02.313Z",
+      "lastUpdated": "2021-10-29T14:04:02.313Z",
+      "id": 2
+    },
+    {
+      "title": "Hearthstone",
+      "created": "2021-10-29T14:04:22.416Z",
+      "lastUpdated": "2021-10-29T14:04:22.416Z",
+      "id": 3
+    },
+    {
+      "title": "Fortnite",
+      "created": "2021-10-29T14:07:05.179Z",
+      "lastUpdated": "2021-10-29T14:07:05.179Z",
+      "id": 4
+    }
+  ],
+  "coaches": [
+    {
+      "id": 1,
+      "created": 1619611766930,
+      "lastUpdated": "2021-10-29T14:05:50.720Z",
+      "name": "Nicholas 'NicoThePico' Korsgård",
+      "nickname": "NicoThePico",
+      "categoryId": "2",
+      "language": "English",
+      "price": 102,
+      "discount": 15,
+      "isCoachCertified": true,
+      "posterImgUrl": "https://s3-us-west-1.amazonaws.com/gamer-sensei-production/app/public/profile/1693be55e705a282f1e518d7fe70526c6d50068b.jpg?1509729031",
+      "availability": "2021-05-01T13:06:31.076Z",
+      "description": "Hi there, I'm Nicholas Korsgård, more known through my gamertag NicoThePico! I've been a gamer for all my life, going back all the way to spending my days catching Pokémon, to now being a professional coach in League of Legends for the last few years. Coming from multiple years of coaching and playing League of Legends, both individually and on team level it was about time to become a Sensei! Looking forward to meet you and help you achieve your goals!",
+      "achievments": "All teams I have Coached: Fnatic, Origen, Ninjas in Pyjamas, PostFinance Helix, Enigma and currently head coaching Fnatic academy.\nCoached players such as Caps, Rekkles, Broxah, sOAZ, xPeke, Febiven, Zven, Mithy, Nisqy, PowerOfEvil, Promisq\nFulltime Coach since 2015\nHad all three top 3 teams in Teamranked on the challenger ladder whilst being a jungler for Enigma\nPeaked top 250 EUW and high Challenger on EUNE Soloqueue\nWas challenger in multiple roles"
+    },
+    {
+      "id": 2,
+      "created": 1619611766930,
+      "lastUpdated": "2021-10-29T14:05:59.541Z",
+      "name": "Michael 'JapaneseImport' Takahashi",
+      "nickname": "JapaneseImport",
+      "language": "English",
+      "categoryId": "1",
+      "price": 42.5,
+      "discount": 5,
+      "isCoachCertified": true,
+      "posterImgUrl": "https://s3-us-west-1.amazonaws.com/gamer-sensei-production/app/public/profile/3ee5a3064bb936728c55e3a10b19493ccd938023.png?1617919520",
+      "availability": "2021-05-01T13:06:29.087Z",
+      "description": "Are you tired of playing hours on end without seeing any improvement? Take your game to the next level with my Pro OW Coaching.\n\nHello my name is Elliott 'Hayes', I have been Coaching Professionally in Overwatch since the release in 2016. I have coached numerous contenders teams, firstly Reunited and formerly Eunited. I have been nominated consecutively for the past three years to coach Team UK in the Overwatch World cup. During that time I led Philadelphia Fusion to the finals of the Overwatch League Season 1, where we took 2nd place ($400,000).\n\nBesides Coaching world class teams, I also coach individuals from all background and experience, ranging from new players to top 500.\n\nI know that every student is different so I will work with you personally to identify your strengths and weaknesses, mistakes and misplays as well as give you constructive feedback to work on in-between sessions.\n\nI look forward to working with you to achieve your goal!",
+      "achievments": "2nd Place Overwatch League Season 1\n500 Hours of Professional Coaching\nMultiple top 500 Season finishes, including 4682 Season high season 2\nOGN Season 1 5th Place Finish\nProfessional Overwatch Coach for eUnited\nTeam UK Head Coach"
+    },
+    {
+      "name": "NICHOLAS 'ZAV' BINYON",
+      "nickname": "Zav",
+      "description": "Hi guys! I'm Nick. Currently I am a 22 year old university student living in London, England, following my dreams! I started out as a casual Fortnite player in the first season, but fell in love with the game and started playing competitively.\n\nI am an experienced coach at all levels, helping advanced solos and duos through FNCS qualifiers, as well as helping beginners start their Fortnite journey! As well as working on weaker areas, I strongly believe that taking advantage of your strengths is also very important! A positive mindset and willingness to work at improving is imperative to success.\n\nThere are many things that are important in Fortnite, such as building, gun skill, and tactical awareness. We'll talk about different strategies against different kinds of players, against various weapons, and in the different game modes. (Solo, Duo, Squads, Arena, Boxfights, 1v1s)",
+      "achievments": "1300 wins\n$500+ in earnings\nBattle Royale coach specialist at Evoke\nQualified in solos and duos for World Cup Online Qualifier Finals\nScrim player on PC and Console",
+      "categoryId": "4",
+      "language": "English",
+      "price": 100,
+      "discount": 10,
+      "posterImgUrl": "https://s3-us-west-1.amazonaws.com/gamer-sensei-production/app/public/profile/ee0d107f44b6be7dfc7a9e7b642a94325cc01162.jpg?1620286296",
+      "isCoachCertified": false,
+      "availability": "2021-10-31T22:00:00.000Z",
+      "created": "2021-10-29T14:08:15.879Z",
+      "lastUpdated": "2021-10-29T14:12:43.250Z",
+      "id": 3
+    }
+  ]
+}

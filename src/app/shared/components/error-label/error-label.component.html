@@ -1,0 +1,7 @@
+<ng-container *ngIf="control.invalid && control.touched">
+    <small *ngIf="control.errors.required" class="form-text text-danger">This field is required</small>
+    <small *ngIf="control.errors.minlength" class="form-text text-danger">This minimum length is {{control.errors.minlength.requiredLength}}</small>
+    <small *ngIf="control.errors.maxlength" class="form-text text-danger">This maximum length is {{control.errors.maxlength.requiredLength}}</small>
+    <small *ngIf="control.errors.min" class="form-text text-danger">This minimum value is {{control.errors.min.min}}</small>
+    <small *ngIf="control.errors.max" class="form-text text-danger">This maximum value is {{control.errors.max.max}}</small>
+</ng-container>

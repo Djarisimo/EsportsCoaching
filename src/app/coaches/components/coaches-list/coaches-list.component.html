@@ -1,0 +1,87 @@
+<div class="d-flex justify-content-between mt-2">
+  <h3>Coaches</h3>
+  <div class="mb-2">
+    <div class="form-inline">
+      <div class="btn-group" btnRadioGroup [(ngModel)]="listType">
+        <label class="btn btn-success mr-1" btnRadio="table">Table</label>
+        <label class="btn btn-success" btnRadio="json">JSON</label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a routerLink="../create" class="btn btn-primary">Create</a>
+  </div>
+</div>
+
+<div *ngIf="listType === 'table'">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Featured Sensei ™</th>
+        <th>Created</th>
+        <th>Last Updated</th>
+        <th>Category</th>
+        <th>Language</th>
+        <th>Price</th>
+        <th>Discount</th>
+        <th>Availability</th>
+        <th>Certified</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coach of coaches">
+        <td>{{coach.id}}</td>
+        <td>
+          <div class="coach-summary">
+            <div class="coach-image-container">
+              <img [src]="coach.posterImgUrl" [alt]="coach.name">
+            </div>
+            <div class="coach-names-container">
+              <a class="coach-name" [routerLink]="['/', 'coaches', 'details', coach.id]">{{coach.name}}</a>
+              <small class="coach-nickname">{{coach.nickname}}</small>
+            </div>
+          </div>
+        </td>
+        <td>{{coach.created | date}}</td>
+        <td>{{coach.lastUpdated | date}}</td>
+        <td>{{coach.category.title}}</td>
+        <td>{{coach.language}}</td>
+        <td>{{coach.price}}</td>
+        <td>{{coach.discount}}%</td>
+        <td>{{coach.availability | date}}</td>
+        <td>
+          <span *ngIf="coach.isCoachCertified; else CoachNotCertified">Yes</span>
+          <ng-template #CoachNotCertified>
+            <span>No</span>
+          </ng-template>
+        </td>
+        <td>
+          <a class="btn btn-sm btn-outline-primary" [routerLink]="['/', 'coaches', 'edit', coach.id]">Edit</a>
+          <button (click)="openDeleteDialog(deteleDialogTemplate, coach)" class="btn btn-sm btn-outline-danger ml-2">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="listType === 'json'">
+  <pre>{{coaches | json}}</pre>
+</div>
+
+<ng-template #deteleDialogTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Delete Coach?</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Are you sure you want to delete "{{selectedCoach.name}}"?</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="modalRef.hide()">Candel</button>
+    <button type="button" class="btn btn-danger" (click)="deleteCoach()">Delete</button>
+  </div>
+</ng-template>

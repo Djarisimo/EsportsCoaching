@@ -1,0 +1,52 @@
+<div *ngIf="coach" class="coach-image">
+  <img [src]="coach.posterImgUrl" [alt]="coach.name" width="200" height="200">
+</div>
+
+<br>
+
+<div *ngIf="coach">
+  <div class="coach-name">
+    <h2>{{coach.name}}</h2>
+    <h3>{{coach.nickname}}</h3>
+</div>
+
+  <br>
+  <br>
+
+  <div class="coach-details">
+    <ul>
+      <li><span class="pretitle">Category: </span><span class="title">{{coach.category.title}}</span></li>
+      <li><span class="pretitle">Language: </span><span class="title">{{coach.language}}</span></li>
+      <li><span class="pretitle">Regular price: </span><span class="title">${{coach.price}}</span></li>
+      <li><span class="pretitle">Current Price: </span><span class="title">${{getCurrentPrice() | number:'1.2-2'}}
+          (-{{coach.discount}}% discount)</span>
+      </li>
+      <li><span class="pretitle">Coach Certified: </span><span class="title">{{coach.isCoachCertified ? 'Yes' :
+          'No'}}</span></li>
+      <li><span class="pretitle">Availability: </span><span class="title">{{coach.availability | date}}</span></li>
+    </ul>
+  </div>
+
+  <div class="coach-information">
+    <ul>
+      <li><span class="pretitle">Created: </span><span class="title">{{coach.created | date}}</span></li>
+      <li><span class="pretitle">Last updated: </span><span class="title">{{coach.lastUpdated | date}}</span></li>
+    </ul>
+  </div>
+
+  <div class="coach-description">
+    <h2 class="text">About</h2>
+    <br>
+    <p>{{coach.description}}</p>
+  </div>
+
+  <div class="coach-achievments">
+    <table class="table">
+      <tr>
+        <th class="text-achievments">Achievments</th>
+      </tr>
+      <td>
+        <pre class="pre">{{coach.achievments}}</pre>
+      </td>
+    </table>
+  </div>

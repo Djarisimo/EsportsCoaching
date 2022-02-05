@@ -1,0 +1,78 @@
+.text-highlight {
+    text-align: center;
+    font-weight: 500;
+    font-family: "Bebas Neue Pro", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 118px;
+    line-height: 118px;
+    letter-spacing: 1.5px;
+    box-sizing: inherit;
+    color: rgb(66, 244, 101);
+    display: block;
+    font-size: 118px;
+    line-height: 118px;
+    letter-spacing: 1.5px;
+}
+
+.pretitle {
+    display: block;
+    font-family: "Helvetica Neue LT Pro", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+// .h1 {
+//     text-align: center;
+//     padding: 0;
+//     display: block;
+//     font-family: "Bebas Neue Pro", Helvetica, Arial, sans-serif;
+//     text-transform: uppercase;
+//     margin: 0;
+//     font-size: 100px;
+//     line-height: 118px;
+//     letter-spacing: 1.5px;
+//     color: rgb(232, 230, 227);
+// }
+
+.second-title {
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+}
+
+.section-body {
+    color: rgb(232, 230, 227);
+    max-width: 300px;
+    justify-content: center;
+    border-radius: 100px;
+    border: 4px solid transparent;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 3px;
+    line-height: 14px !important;
+    padding: 15px;
+    font-weight: 700;
+    background-color: rgb(10, 169, 73);
+    border-color: rgb(9, 157, 38);
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    font-family: "Bebas Neue Pro", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+}
+

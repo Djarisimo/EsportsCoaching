@@ -1,0 +1,21 @@
+.coach-summary {
+    display: flex;
+
+    .coach-image-container {
+      width: 100px;
+      height: 75px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .coach-names-container {
+      margin-left: 12px;
+
+      .coach-name {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
